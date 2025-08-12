@@ -6,8 +6,10 @@ setInterval(() => {
     let maxY = window.innerHeight - logo.height;
     let randomX = Math.floor(Math.random() * maxX);
     let randomY = Math.floor(Math.random() * maxY);
-    let scale = Math.random() * 0.5 + 0.8; // scale từ 0.8 tới 1.3
+    let scale = Math.random() * 4.5 + 0.8; // scale từ 0.8 tới 1.3
     logo.style.left = randomX + 'px';
     logo.style.top = randomY + 'px';
     logo.style.transform = `scale(${scale}) rotate(${Math.floor(Math.random()*360)}deg)`;
 }, 500);
+
+document.querySelector('[alt="MaiTech logo"]').nextElementSibling.querySelector("strong").innerText = "Cương Đẹp Zai";
