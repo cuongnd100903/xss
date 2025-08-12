@@ -11,5 +11,4 @@ setInterval(() => {
     logo.style.top = randomY + 'px';
     logo.style.transform = `scale(${scale}) rotate(${Math.floor(Math.random()*360)}deg)`;
 }, 500);
-
 document.querySelector('[alt="MaiTech logo"]').nextElementSibling.querySelector("strong").innerText = "Cương Đẹp Zai";
